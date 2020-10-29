@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <link href="documentation_page.css" type="text/css" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+            <div id="navigation">
+                <nav id="navbar">
+                    <header><h1>PYTHON PROGRAMMING TUTORIAL</h1></header>
+                    <ul>
+                        <li><a href="#Introduction_to_Python_programming" class="nav-link">Introduction to Python programming</a></li>
+                        <li><a href="#Datatypes" class="nav-link">Datatypes</a></li>
+                        <li><a href="#Functions_and_classes" class="nav-link">Functions and classes</a></li>
+                        <li><a href="#GUI_programming_with_Tkinter" class="nav-link">GUI programming with Tkinter</a></li>
+                        <li><a href="#Matplotlib" class="nav-link">Matplotlib</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="container">
+                <main id="main-doc">
+                    <section class="main-section" id="Introduction_to_Python_programming" >
+                        <header id="first-section">
+                            <h2>Introduction to Python programming</h2>
+                        </header>
+                        <p>Python is a high level language. High level language is a language that is between the human world and computers world. A program written in high level is said to be an a source code and the file referred to as a source file.<br>Python Having being written in high level makes its a high level prograsmming language. It is also portable and extensible.</p>
+                        <h3>Frameworks and libraries</h3>
+                        <p>Python offers web development frameworks such as:
+                            <ul>
+                                <li>Flask</li>
+                                <li>Django</li>
+                                <li>Pylons</li>
+                            </ul><br>
+                            It also offers AI libraries such as:
+                            <ul>
+                                <li>Scikit learning</li>
+                                <li>Keras</li>
+                                <li>Tensorflow</li>
+                            </ul><br>
+                            It also offers Data Science libraries such as:
+                            <ul>
+                                <li>numpy</li>
+                                <li>Pandas</li>
+                                <li>Matplotlib</li>
+                                <li>Seaborn</li>
+                            </ul>
+                        </p>
+                        <h3>Installation</h3>
+                        <p>Python comes preinstalled with MacOSX and Linux. For windows you can download it from <a href="#">here.</a><br>Once you have installed open the CD and type <strong>python --version </strong>to confirm installation<br>You can now open your python IDLE and write your first code print("Hello world"), quite simple.</p>
+                        
+                    </section>
+    
+                    <section class="main-section" id="Datatypes">
+                        <header id="second-section">
+                            <h2>Datatypes</h2>
+                        </header>
+                        <p id="strings">Double quotes (" ") or single quotes (' ') can be used to specify strings.<br>Triple double quotes or single quotes can be used to make comments.<br>A new line is use to end a line of code<br>The forward slash is used to go to the next line prematurely<br>Names are case sensitive and cannot start with numbers but they contain letters, underscores and numbers.</p>
+                        <p id="datatypes">Datatypes can be mutable or immutable. Mutable datatypes are those that when we change data we do it in place, we do not copy them in a new memory addresseach at a time i.e if we type y=x and modify y, x is also affected. Immutable datatypes do not change. Examples of mutable datatypes are lists, dictionaries and user defined types, and immutable are strings, integers, float and tuples.
+                            <ol>
+                                <li><strong>Tuples </strong>are defined using parenthesses and commas ie <br><code>tu=(23, 'abc', 'def', 4.4)</code></li>
+                                <li><strong>Lists </strong>are defined using square brackets and commas ie <br><code>li=['abc', 23, 4.5]</code></li>
+                                <li><strong>Dictionaries </strong>are defined using curly brackets ie <br><code>d={'user':'hellen', 'pswd':1234}</code></li>
+                            </ol>
+                        </p>
+    
+                    </section>
+    
+                    <section class="main-section" id="Functions_and_classes">
+                        <header id="third-section">
+                            <h2>Functions and classes</h2>
+                        </header>
+                        <h3 id="functions">Functions</h3>
+                        <p id="paragraph3">A function is a block of code, designed to do one specific job. Information passed to a function is called an argument, and information received by a function is called a parameter.A function is defined using def, the syntax of a function is <strong>def func_name (parameter): </strong>after colon the indetation is required to indicate a new block of code. An example of a function is as follows :<code><br>def greet_user():<br>'''Display greetings'''<br>print("Hello!")<br>greet_user()<br>Returning a value:<br>def add_numbers(x, y):<br>return x+y<br>sum=add_numbers(3, 5)<br>print(sum)</code><br><em>Disclaimer:My code does not have indetation</em></p>
+                        <h3 id="classes">Classes</h3>
+                        <p id="paragraph4">A class defines the behavior of an object and the kind ofinformation an object can store. The information in a classis stored in attributes, and functions that belong to a classare called methods. A child class inherits the attributes andmethods from its parent class.</p>
+                        <p id="paragraph5">An example of a class is as follows:<code><br>Class car(): <br>def__init__ (self, name, model):<br>self.name<br>self.model<br>def fill_tank(self)<br>self.fuel_capacity= self.fuel_capacity<br>print("Fuel tank is full")</code></p>
+                    </section>
+    
+                    <section class="main-section" id="GUI_programming_with_Tkinter">
+                        <header id="fourth-section">
+                            <h2>GUI programming with Tkinter</h2>
+                        </header>
+                            <p id="intro-GUI">Nearly every GUI program will be written contain the following lines: <code><strong><br> tkinter import *<br>root=Tk()<br>mainloop()</strong></code><br>The first line imports all GUI stuff from Tkinter module. The second line will create a window on the screen which is called a root. The third line puts the program into what is essentially a long- running loop </p>
+                            <h3 id="label">Label</h3>
+                            <p id="paragraph6">A label is a place to place text on the screen eg <code><br>hello_label = Label (text= "Hello") hello_label.grid(row=0, column=0)</code><br>There are a number of ways in which one can change font size and color:<code><br>Label=(text="Hello", font=('Verdana' <em>font name</em>, 24 <em>font size</em>, 'bold'<em>font style</em>), bg='blue', fg='white')</code></p>
+                            <h3 id="grid">Grid</h3>
+                            <p id="paragraph7">Grid method is used to place things on the screen. It lays out the screen as a rectangular grid of rows and columns
+                                <table width="400px" >
+                                    <tr>
+                                        <td>row 0, column 0</td>
+                                        <td>row 0, column 1</td>
+                                        <td>row 0, column 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>row 1, column 0</td>
+                                        <td>row 1, column 1</td>
+                                        <td>row 1, column 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>row 2, column 0</td>
+                                        <td>row 2, column 1</td>
+                                        <td>row 2, column 2</td>
+                                    </tr>
+                                </table>
+                            </p>
+                            <h3 id="button">Button</h3>
+                            <p>ok_button = Button (text= 'ok'). This line of code creates a button of text ok. To get the button to do something when clicked, the command argument is used:<code><br>from tkinter import *<br>def callback():<br>label,configure(text='Button clicked')<br>root=Tk()be<br>label=Label(text='not-clicked')<br>button=Button(text=click me', command=callback)</code></p>
+                            <h3 id="frames">Frames</h3>
+                            <p>Frames hold other widgets and essentiallycombines theminto one large widgets</p>                        
+                    </section>
+                    
+                    <section class="main-section" id="Matplotlib">
+                        <header id="fifth-section">
+                            <h2>Matplotlib</h2>
+                        </header>
+                        <p id="explanation">Data visualization involves exploring data throughvisual representations. The matplotlib package helpsyou make visually appealing representations of thedata you’re working with. matplotlib is extremelyflexible. To install python you can use pip. Open your CD and type <strong>pip install --matplotlib.</strong>To confirm if its installed you open your terminal and type import matplotlib if there are no errors it means it was successfully installed. Making a line graph:<code><br>import matplotlip.pyplot as plt<br>x_values=[0, 1, 2, 3]<br>squares=[0, 1, 4, 9]<br>plt.plot(x_values, squares)<br>plt.show()</code></p>
+                    </section>
+                    
+                </main>
+            </div>
+            
+    </body>
+</html>
